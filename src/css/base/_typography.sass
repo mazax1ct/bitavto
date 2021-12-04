@@ -1,0 +1,43 @@
+body
+  color: $light-text-color
+  font-family: 'ProximaNova-Regular', Arial, sans-serif
+  font-size: 18px
+  line-height: 1.33333
+  overflow-wrap: break-word
+
+  @media(min-width: 1900px)
+    font-size: 23px
+
+a
+  color: $dark-text-color
+  transition: color 0.3s
+  text-decoration: none
+
+  &:hover,
+  &:active
+    color: $light-text-color
+
+  &:focus
+    color: $dark-text-color
+    outline: 0.5px solid $dark-text-color
+
+  &.disabled
+    color: $disabled-color
+    pointer-events: none
+
+img
+  height: auto
+  max-width: 100%
+  vertical-align: top
+
+p,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin-top: 0
+  margin-bottom: 0

@@ -1,0 +1,52 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4231431, 2021-11-30T09:26:36-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: ArtegraSans-Regular by Artegra
+ * URL: https://www.myfonts.com/fonts/artegra/artegra-sans/regular/
+ * Copyright: Copyright (c) 2017 by Artegra. All rights reserved.
+ *
+ * Webfont: ArtegraSans-Medium by Artegra
+ * URL: https://www.myfonts.com/fonts/artegra/artegra-sans/medium/
+ * Copyright: Copyright (c) 2017 by Artegra. All rights reserved.
+ *
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: https://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ *
+ *
+ * © 2021 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/409107");
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url('../fonts/webFontsFix/ProximaNovaRegular/font.woff2') format('woff2'), url('../fonts/webFontsFix/ProximaNovaRegular/font.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArtegraSans-Regular";
+  src: url('../fonts/webFonts/ArtegraSansRegular/font.woff2') format('woff2'), url('../fonts/webFonts/ArtegraSansRegular/font.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArtegraSans-Medium";
+  src: url('../fonts/webFonts/ArtegraSansMedium/font.woff2') format('woff2'), url('../fonts/webFonts/ArtegraSansMedium/font.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,62 @@
+.input-file
+  position: relative
+
+  input
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:focus + .input-file__text-block
+      border-color: $light-text-color
+      outline: none
+
+    &:disabled + .input-file__text-block
+      background-color: #FAFAFA
+      border-color: #FAFAFA
+      color: $disabled-color
+      cursor: default
+
+      .icon
+        fill: $disabled-color
+
+    &.error + .input-file__text-block,
+    &.error:focus + .input-file__text-block
+      border-color: $red
+
+  &__text-block
+    align-items: center
+    background-color: $bg
+    border: 0.5px solid $bg
+    border-radius: 0
+    box-shadow: none
+    color: $light-text-color
+    cursor: pointer
+    display: flex
+    font-family: 'ProximaNova-Regular', Arial, sans-serif
+    font-size: 18px
+    font-weight: 400
+    height: 50px
+    padding: 15px 24px
+    line-height: 1.11111
+    transition: border-color 0.3s
+    width: 100%
+
+    @media(min-width: 1350px)
+      font-size: 25px
+      height: 60px
+      line-height: 1.2
+      padding-left: 22px
+      padding-right: 22px
+
+    .icon
+      fill: $light-text-color
+      height: 17px
+      margin-right: 16px
+      width: 17px
+
+      @media(min-width: 1350px)
+        height: 22px
+        margin-right: 10px
+        width: 22px

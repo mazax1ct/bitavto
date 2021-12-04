@@ -1,0 +1,56 @@
+.button
+  align-items: center
+  border: none
+  border-radius: 0 0 14px 0
+  background-color: $blue
+  color: #fff
+  cursor: pointer
+  display: inline-flex
+  font-family: 'ArtegraSans-Medium', Arial, sans-serif
+  font-size: 18px
+  font-weight: 500
+  justify-content: space-between
+  height: 53px
+  min-width: 244px
+  padding-left: 28px
+  padding-right: 39px
+  text-decoration: none
+  text-align: center
+  transition: background-color 0.3s
+  vertical-align: middle
+
+  @media(min-width: 1350px)
+    border-radius: 0 0 20px 0
+    font-size: 20px
+    height: 70px
+    letter-spacing: 0.96px
+    min-width: 257px
+    padding-left: 33px
+    padding-right: 33px
+
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $dark-text-color
+    color: #fff
+
+  &:focus
+    outline: none
+
+  &:disabled,
+  &.disabled
+    background-color: $light_blue
+    color: #fff
+    cursor: default
+
+    &:focus
+      outline: none
+
+  .icon
+    fill: #fff
+    height: 6px
+    width: 32px
+
+    @media(min-width: 1350px)
+      height: 8px
+      width: 43px

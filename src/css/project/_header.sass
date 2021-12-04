@@ -1,0 +1,150 @@
+.header
+  background-color: #fff
+  border-bottom: 1px solid $light-text-color
+  left: 0
+  position: fixed
+  padding-top: 20px
+  padding-bottom: 20px
+  right: 0
+  top: 0
+  z-index: 10
+
+  @media(min-width: 1024px)
+    border-bottom: none
+    position: absolute
+    padding-top: 40px
+
+  @media(min-width: 1350px)
+    padding-top: 62px
+
+  &__inner
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+  &__logo
+    width: 194px
+
+    @media(min-width: 1024px)
+      width: 245px
+
+  &__contacts
+    box-shadow: -2px 2px 4px 0 rgba(#000, 0.2)
+    background-color: #fff
+    display: none
+    left: auto
+    opacity: 0
+    position: absolute
+    padding: 14px 16px 16px
+    right: 0
+    top: calc(100% + 1px)
+    transition: opacity 0.3s
+    z-index: 1
+
+    @media(min-width: 1024px)
+      box-shadow: none
+      display: flex !important
+      left: auto
+      opacity: 1
+      padding: 0
+      position: static
+      right: auto
+      top: auto
+
+    &.is-active
+      display: block
+
+    &.animate
+      opacity: 1
+
+  &__phones
+    font-size: 12px
+    line-height: 1.25
+    margin-bottom: 10px
+
+    @media(min-width: 1024px)
+      align-items: center
+      display: flex
+      font-size: 18px
+      line-height: 1.21739
+      margin-right: 48px
+      margin-bottom: 0
+
+    @media(min-width: 1350px)
+      font-size: 23px
+
+    a
+      display: block
+
+      &:not(:last-child)
+        margin-bottom: 7px
+
+        @media(min-width: 1024px)
+          margin-bottom: 0
+
+    span
+      @media(min-width: 1024px)
+        background-color: $dark-text-color
+        height: 24px
+        margin-left: 28px
+        margin-right: 28px
+        width: 2px
+
+  &__messangers
+    display: flex
+
+    a
+      display: block
+      height: 18px
+      transition: opacity 0.3s
+      width: 18px
+
+      &:hover,
+      &:focus
+        opacity: 0.7
+
+      @media(min-width: 1024px)
+        height: 34px
+        width: 34px
+
+      &:not(:last-child)
+        margin-right: 13px
+
+        @media(min-width: 1024px)
+          margin-right: 17px
+
+  &__burger
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 22px
+    justify-content: center
+    padding: 0
+    position: relative
+    width: 6px
+
+    @media(min-width: 1024px)
+      display: none
+
+    &::after
+      content: ''
+      height: 44px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 44px
+      z-index: 1
+
+    &.is-active
+      .icon
+        height: 17px
+        width: 4px
+
+    .icon
+      fill: $dark-text-color
+      height: 23px
+      transition: height 0.3s, width 0.3s
+      width: 6px
