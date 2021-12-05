@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "ProximaNova-Regular";
-  src: url('/fonts/webFonts/ProximaNovaRegular/font.woff2') format('woff2'), url('/fonts/webFonts/ProximaNovaRegular/font.woff') format('woff');
+  src: url('../fonts/webFonts/ProximaNovaRegular/font.woff2') format('woff2'), url('../fonts/webFonts/ProximaNovaRegular/font.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: "ArtegraSans-Regular";
-  src: url('/fonts/webFonts/ArtegraSansRegular/font.woff2') format('woff2'), url('/fonts/webFonts/ArtegraSansRegular/font.woff') format('woff');
+  src: url('../fonts/webFonts/ArtegraSansRegular/font.woff2') format('woff2'), url('../fonts/webFonts/ArtegraSansRegular/font.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
