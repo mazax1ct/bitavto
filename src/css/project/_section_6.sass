@@ -1,0 +1,121 @@
+.section_6
+  padding-top: 42px
+  padding-bottom: 46px
+
+  @media(min-width: 1024px)
+    padding-top: 80px
+    padding-bottom: 60px
+
+  @media(min-width: 1800px)
+    padding-top: 173px
+    padding-bottom: 123px
+
+.cars-slider
+  &:not(:last-child)
+    margin-bottom: 16px
+
+    @media(min-width: 1024px)
+      margin-bottom: 22px
+
+  @media(min-width: 1350px)
+    margin-right: calc(-100% - 1602px/2)
+
+  .swiper-slide
+    width: 222px
+
+    @media(min-width: 1800px)
+      width: 390px
+
+.cars-slider-nav
+  align-items: center
+  display: flex
+  justify-content: flex-end
+
+  &:not(:last-child)
+    margin-bottom: 25px
+
+    @media(min-width: 1350px)
+      margin-bottom: 38px
+
+  @media(min-width: 1800px)
+    padding-right: 238px
+
+  .swiper-button-prev,
+  .swiper-button-next
+    background-color: transparent
+    border: none
+    cursor: pointer
+    height: 13px
+    left: auto
+    margin-top: 0
+    position: relative
+    padding: 0
+    right: auto
+    top: auto
+    width: 21px
+
+    @media(min-width: 1350px)
+      height: 17px
+      width: 27px
+
+    &::after
+      content: ''
+      height: 40px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 40px
+
+    .icon
+      fill: $dark-text-color
+      height: 13px
+      width: 21px
+
+      @media(min-width: 1350px)
+        height: 17px
+        width: 27px
+
+  .swiper-button-prev
+    margin-right: 34px
+
+    @media(min-width: 1350px)
+      margin-right: 70px
+
+.car
+  display: block
+  width: 222px
+
+  @media(min-width: 1800px)
+    width: 390px
+
+  &__image
+    display: block
+    margin-bottom: 32px
+
+    @media(min-width: 1800px)
+      margin-bottom: 56px
+
+    img
+      border-radius: 0 0 0 50px
+
+  &__title
+    display: block
+    margin-bottom: 15px
+
+    @media(min-width: 1800px)
+      font-size: 31px
+      margin-bottom: 26px
+
+  &__price
+    color: $blue
+    font-family: 'ArtegraSans-Medium', Arial, sans-serif
+    font-size: 23px
+    font-weight: 500
+    display: block
+    letter-spacing: 1px
+    line-height: 1.39130
+
+    @media(min-width: 1800px)
+      font-size: 41px
+      letter-spacing: 4.5px

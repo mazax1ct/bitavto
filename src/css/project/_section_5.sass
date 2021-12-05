@@ -1,0 +1,71 @@
+.section_5
+  border-bottom: 2px solid $dark-text-color
+  padding-top: 42px
+  padding-bottom: 41px
+
+  @media(min-width: 1024px)
+    padding-top: 80px
+    padding-bottom: 60px
+
+  @media(min-width: 1800px)
+    padding-top: 173px
+    padding-bottom: 169px
+
+.docs
+  list-style: none
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+
+  &__item
+    margin-left: auto
+    margin-right: auto
+    max-width: 152px
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    @media(min-width: 1350px)
+      max-width: 176px
+
+    @media(min-width: 1800px)
+      max-width: none
+
+    &:not(:last-child)
+      margin-bottom: 24px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+    img
+      margin-bottom: 14px
+
+      @media(min-width: 1350px)
+        margin-bottom: 24px
+
+      @media(min-width: 1800px)
+        margin-bottom: 38px
+
+  &__item-title
+    color: $dark-text-color
+    font-size: 18px
+    font-weight: 400
+
+    @media(min-width: 1350px)
+      font-size: 24px
+
+    @media(min-width: 1800px)
+      font-size: 31px
+
+    .desktop
+      display: none
+
+      @media(min-width: 768px)
+        display: block
+
+    .mobile
+      @media(min-width: 768px)
+        display: none

@@ -58,6 +58,7 @@
       opacity: 1
 
   &__phones
+    color: $dark-text-color
     font-size: 12px
     line-height: 1.25
     margin-bottom: 10px
@@ -73,22 +74,22 @@
     @media(min-width: 1350px)
       font-size: 23px
 
-    a
-      display: block
+  &__phone
+    display: flex
 
-      &:not(:last-child)
-        margin-bottom: 7px
+    &:not(:last-child)
+      margin-bottom: 7px
 
-        @media(min-width: 1024px)
-          margin-bottom: 0
-
-    span
       @media(min-width: 1024px)
-        background-color: $dark-text-color
-        height: 24px
-        margin-left: 28px
-        margin-right: 28px
-        width: 2px
+        margin-bottom: 0
+
+  &__phones-divider
+    @media(min-width: 1024px)
+      background-color: $dark-text-color
+      height: 24px
+      margin-left: 28px
+      margin-right: 28px
+      width: 2px
 
   &__messangers
     display: flex

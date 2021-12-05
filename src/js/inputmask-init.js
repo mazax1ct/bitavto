@@ -5,4 +5,6 @@ $(document).ready(function() {
   });
 
   $(".js-email-mask").inputmask({ alias: "email", "clearIncomplete": true, showMaskOnHover: false});
+
+  $(".js-decimal-mask").inputmask({ alias: "decimal", showMaskOnHover: false, rightAlign: false, placeholder: ""});
 });

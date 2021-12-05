@@ -32,7 +32,478 @@
 
     <div class="page-content">
         <div class="container">
+            <div class="section_1">
+                <div class="section_1__text-block">
+                    <div class="section_1__text-row">
+                        <div class="section_1__text">
+                            <p class="section_1__intro">ВЫКУП БИТЫХ АВТО</p>
+                            <h1 class="section_1__title"><span>Безопасный</span> <span>выкуп битых</span> <span>автомобилей</span></h1>
+                            <p class="section_1__outro"><span>Продай свой авто</span> <span>быстро и выгодно</span></p>
+                        </div>
+                        <div class="section_1__image"><img src="images/content/car.png" alt=""></div>
+                    </div>
+                    <a class="js-scroll-to section_1__button" href="#second">
+                        <svg class="icon">
+                            <use xlink:href="#big_arrow_down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="section_1__form-block">
+                    <form class="section_1__form" action="">
+                        <p class="section_1__form-title">ЭКСПРЕСС-ОЦЕНКА</p>
+                        <p class="section_1__form-subtitle">ОЦЕНИМ ВАШ АВТОМОБИЛЬ ЗА 10 МИНУТ</p>
+                        <div class="section_1__form-row">
+                            <label class="input-label">
+                                <input class="input" type="text" value="" placeholder="Ваше имя" />
+                            </label>
+                        </div>
+                        <div class="section_1__form-row section_1__form-row--type_1">
+                            <div class="section_1__form-cell">
+                                <label class="input-label">
+                                    <input class="js-phone-mask input" type="text" value="" placeholder="Телефон" />
+                                </label>
+                            </div>
+                            <div class="section_1__form-cell">
+                                <label class="input-label">
+                                    <input class="input" type="text" value="" placeholder="Город" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="section_1__form-row section_1__form-row--type_1">
+                            <div class="section_1__form-cell">
+                                <label class="input-label">
+                                    <input class="input" type="text" value="" placeholder="Марка" />
+                                </label>
+                            </div>
+                            <div class="section_1__form-cell">
+                                <label class="input-label">
+                                    <input class="input" type="text" value="" placeholder="Модель" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="section_1__form-row">
+                            <label class="input-label">
+                                <input class="js-decimal-mask input" type="text" value="" placeholder="Год выпуска" />
+                            </label>
+                        </div>
+                        <div class="section_1__form-row">
+                            <div class="input-file">
+                                <input id="input_1" type="file" multiple>
+                                <label class="input-file__text-block" for="input_1">
+                                    <svg class="icon">
+                                        <use xlink:href="#photo"></use>
+                                    </svg>
+                                    <span class="input-file__text">Фото авто</span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="section_1__form-switch">
+                            <span>Примерная цена</span>
+                            <span class="switch">
+                                <input class="js-price" type="checkbox">
+                                <span class="switch__icon"></span>
+                            </span>
+                            <span>Точная цена</span>
+                        </label>
+                        <div class="section_1__form-dropdown">
+                            <div class="section_1__form-row section_1__form-row--type_1">
+                                <div class="section_1__form-cell">
+                                    <label class="input-label">
+                                        <input class="js-decimal-mask input" type="text" value="" placeholder="Пробег" />
+                                    </label>
+                                </div>
+                                <div class="section_1__form-cell">
+                                    <label class="select-wrapper">
+                                        <span class="select-wrapper__container">
+                                            <select class="js-select" placeholder="Тип КПП">
+                                                <option value=""></option>
+                                                <option value="1">Механика</option>
+                                                <option value="2">Автомат</option>
+                                                <option value="3">Робот</option>
+                                                <option value="4">Вариатор</option>
+                                            </select>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section_1__form-row section_1__form-row--type_1">
+                                <div class="section_1__form-cell">
+                                    <label class="input-label">
+                                        <input class="js-decimal-mask input" type="text" value="" placeholder="Объем ДВС" />
+                                    </label>
+                                </div>
+                                <div class="section_1__form-cell">
+                                    <label class="select-wrapper">
+                                        <span class="select-wrapper__container">
+                                            <select class="js-select" placeholder="Тип ДВС">
+                                                <option value=""></option>
+                                                <option value="1">Бензиновый</option>
+                                                <option value="2">Дизельный</option>
+                                                <option value="3">Гибридный или электрический</option>
+                                            </select>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section_1__form-row section_1__form-row--type_1">
+                                <div class="section_1__form-cell">
+                                    <label class="input-label">
+                                        <input class="js-email-mask input" type="text" value="" placeholder="Email" />
+                                    </label>
+                                </div>
+                                <div class="section_1__form-cell">
+                                    <label class="input-label">
+                                        <input class="js-decimal-mask input price-input" type="text" value="" placeholder="Желаемая стоимость" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section_1__form-row">
+                                <label class="input-label">
+                                    <textarea class="textarea" placeholder="Дополнительная информация" data-limit="100"></textarea>
+                                    <span class="validation-message error">
+                                        <span class="message-count"><span>0</span>/100</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="button" type="submit">
+                            <span>отправить</span>
+                            <svg class="icon">
+                                <use xlink:href="#button_arrow_right"></use>
+                            </svg>
+                        </button>
+                        <p class="section_1__form-note">Отправляя заявку, вы принимаете <a href="https://bitavto.ru/files/info/processing_of_personal_data.pdf" target="_blank">условия соглашения</a></p>
+                    </form>
+                </div>
+            </div>
 
+            <div id="second" class="section_2">
+                <div class="columns">
+                    <div class="columns__small">
+                        <h2>КАКИЕ АВТОМОБИЛИ<br> МЫ ВЫКУПАЕМ</h2>
+                    </div>
+                    <div class="columns__big">
+                        <ul class="features_1">
+                            <li class="features_1__item">
+                                <h3 class="features_1__item-title">
+                                    <span><img src="images/content/icons/icon_1.svg" alt=""></span>
+                                    Битые автомобили
+                                </h3>
+                                <p>Аварийные автомобили поврежденные<br> в результате ДТП</p>
+                            </li>
+                            <li class="features_1__item">
+                                <h3 class="features_1__item-title">
+                                    <span><img src="images/content/icons/icon_2.svg" alt=""></span>
+                                    Авто на разборку
+                                </h3>
+                                <p>Неисправные и битые автомобили<br> не подлежащие восстановлению</p>
+                            </li>
+                            <li class="features_1__item">
+                                <h3 class="features_1__item-title">
+                                    <span><img src="images/content/icons/icon_3.svg" alt=""></span>
+                                    Неисправные авто
+                                </h3>
+                                <p>Автомобили не на ходу, с неисправным<br> двигателем или КПП</p>
+                            </li>
+                            <li class="features_1__item">
+                                <h3 class="features_1__item-title">
+                                    <span><img src="images/content/icons/icon_4.svg" alt=""></span>
+                                    Авто от юр. лиц
+                                </h3>
+                                <p>Аварийные и разукомплектованные<br> автомобили организаций</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_3">
+                <div class="columns">
+                    <div class="columns__small">
+                        <h2>МЫ НЕ ВЫКУПАЕМ<br> АВТОМОБИЛИ</h2>
+                    </div>
+                    <div class="columns__big">
+                        <ul class="features_2">
+                            <li class="features_2__item">
+                                <h3 class="features_2__item-title">
+                                    <span><img src="images/content/icons/icon_5.svg" alt=""></span>
+                                    Авто без документов
+                                </h3>
+                                <p>Автомобили без документов<br> и в отсутствии собственника</p>
+                            </li>
+                            <li class="features_2__item">
+                                <h3 class="features_2__item-title">
+                                    <span><img src="images/content/icons/icon_5.svg" alt=""></span>
+                                    Авто в розыске
+                                </h3>
+                                <p>Автомобили находящиеся в розыске<br> при любых основаниях</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_4">
+                <div class="columns">
+                    <div class="columns__small">
+                        <h2>4 ПРОСТЫХ ЭТАПА<br> ВЫКУПА АВТО</h2>
+                    </div>
+                    <div class="columns__big">
+                        <ul class="features_3">
+                            <li class="features_3__item">
+                                <h3 class="features_3__item-title">
+                                    <span></span>
+                                    Отправка заявки на оценку
+                                </h3>
+                                <p>Заполните простую онлайн-форму на нашем сайте и отправьте заявку на оценку</p>
+                            </li>
+                            <li class="features_3__item">
+                                <h3 class="features_3__item-title">
+                                    <span></span>
+                                    Оценка автомобиля экспертом
+                                </h3>
+                                <p>Получите предварительную оценку авто и согласуйте с экспертом очный осмотр</p>
+                            </li>
+                            <li class="features_3__item">
+                                <h3 class="features_3__item-title">
+                                    <span></span>
+                                    Подписание договора купли-продажи
+                                </h3>
+                                <p>После осмотра подписываем договор купли-продажи и сразу осуществляем расчет</p>
+                            </li>
+                            <li class="features_3__item">
+                                <h3 class="features_3__item-title">
+                                    <span></span>
+                                    Передача денежных средств
+                                </h3>
+                                <p>Бесплатно эвакуируем автомобиль с места стоянки и снимаем с учета в ГИБДД</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_5">
+                <div class="columns">
+                    <div class="columns__small">
+                        <h2>НЕОБХОДИМЫЕ<br> ДОКУМЕНТЫ</h2>
+                    </div>
+                    <div class="columns__big">
+                        <ul class="docs">
+                            <li class="docs__item">
+                                <img src="images/content/docs/icon_1.svg" alt="">
+                                <h3 class="docs__item-title"><span class="mobile">Паспорт</span> <span class="desktop">Паспорт<br> владельца<br> автомобиля</span></h3>
+                            </li>
+                            <li class="docs__item">
+                                <img src="images/content/docs/icon_2.svg" alt="">
+                                <h3 class="docs__item-title"><span class="mobile">ПТС</span> <span class="desktop">Паспорт<br> транспортного<br> средства</span></h3>
+                            </li>
+                            <li class="docs__item">
+                                <img src="images/content/docs/icon_3.svg" alt="">
+                                <h3 class="docs__item-title"><span class="mobile">СТС</span> <span class="desktop">Свидетельство<br> о регистрации<br> автомобиля</span></h3>
+                            </li>
+                            <li class="docs__item">
+                                <img src="images/content/docs/icon_4.svg" alt="">
+                                <h3 class="docs__item-title"><span class="mobile">Ключи</span> <span class="desktop">Комплект<br> ключей<br> автомобиля</span></h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_6">
+                <div class="columns">
+                    <div class="columns__small">
+                        <h2>ВЫКУПЛЕННЫЕ<br> АВТОМОБИЛИ</h2>
+                    </div>
+                    <div class="columns__big">
+                        <div class="js-cars-slider cars-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Jetta, 2011</span>
+                                        <span class="car__price">500 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Polo, 2020</span>
+                                        <span class="car__price">750 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Jetta, 2011</span>
+                                        <span class="car__price">500 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Polo, 2020</span>
+                                        <span class="car__price">750 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Jetta, 2011</span>
+                                        <span class="car__price">500 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Polo, 2020</span>
+                                        <span class="car__price">750 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Jetta, 2011</span>
+                                        <span class="car__price">500 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Polo, 2020</span>
+                                        <span class="car__price">750 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Jetta, 2011</span>
+                                        <span class="car__price">500 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Polo, 2020</span>
+                                        <span class="car__price">750 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Jetta, 2011</span>
+                                        <span class="car__price">500 000 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="car" href="#" target="_blank">
+                                        <picture class="car__image">
+                                            <source srcset="images/content/cars/img_1.jpg, images/content/cars/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                            <img src="images/content/cars/img_1_mobile.jpg" srcset="images/content/cars/img_1_mobile@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="car__title">Volkswagen Polo, 2020</span>
+                                        <span class="car__price">750 000 ₽</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cars-slider-nav">
+                            <button class="swiper-button-prev" type="button" title="Назад">
+                                <svg class="icon">
+                                    <use xlink:href="#slider_prev"></use>
+                                </svg>
+                            </button>
+                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                <svg class="icon">
+                                    <use xlink:href="#slider_next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="button" href="https://bitavto.ru/" target="_blank">
+                            <span>подробнее</span>
+                            <svg class="icon">
+                                <use xlink:href="#button_arrow_right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_7">
+                <div class="columns">
+                    <div class="columns__small">
+                        <h2>ЧАСТЫЕ ВОПРОСЫ<br> КЛИЕНТОВ</h2>
+                    </div>
+                    <div class="columns__big">
+                        <div class="accordion">
+                            <button class="accordion__toggler" type="button">Насколько точна предварительная оценка?</button>
+                            <div class="accordion__body">
+                                <p>Профессиональная дистанционная оценка при наличии информативных фото повреждений автомобиля имеет высокую степень достоверности. Если при очном осмотре эксперт не обнаруживает скрытых дефектов, отклонение редко
+                                    составляет более 10% от предварительно озвученной суммы.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion__toggler" type="button">Выезд эксперта на осмотр бесплатный?</button>
+                            <div class="accordion__body">
+                                <p>Да, все верно. Выезд эксперта на осмотр и расчет остаточной стоимости автомобиля - бесплатные услуги. Кроме этого, транспортировка (эвакуация) автомобиля после заключения сделки также осуществляется за наш счет.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion__toggler" type="button">Могу я отказаться от сделки после осмотра?</button>
+                            <div class="accordion__body">
+                                <p>Да, конечно. Если вас не устроят условия озвученные нашим экспертом вы можете отказаться от продажи автомобиля или взять время подумать. Но мы будем рады если вы воспользуетесь нашим предложением.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion__toggler" type="button">Какие документы оформляются в ходе сделки?</button>
+                            <div class="accordion__body">
+                                <p>В ходе сделки заключается договор купли-продажи (ДКП) между собственником транспортного средства и менеджером нашей компании. Кроме этого, по факту оплаты оформляется расписка в получении денежных средств.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion__toggler" type="button">Кто и как снимает с учета проданный авто?</button>
+                            <div class="accordion__body">
+                                <p>Автомобиль снимается с регистрационного учета собственником по истечении 10 дней после продажи. Сделать это можно на портале Госуслуги или лично в МРЭО ГИБДД предоставив ДКП и расписку в получении денежных средств.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -40,6 +511,11 @@
 
     <!--общие скрипты-->
     //= template/scripts.html
+
+    <script src="js/form.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/cars-slider.js"></script>
+    <script src="js/accordion.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

@@ -5,7 +5,7 @@ body
   line-height: 1.33333
   overflow-wrap: break-word
 
-  @media(min-width: 1900px)
+  @media(min-width: 1800px)
     font-size: 23px
 
 a
@@ -13,13 +13,14 @@ a
   transition: color 0.3s
   text-decoration: none
 
-  &:hover,
-  &:active
-    color: $light-text-color
-
   &:focus
     color: $dark-text-color
     outline: 0.5px solid $dark-text-color
+
+  &:hover,
+  &:active
+    color: $light-text-color
+    outline: none
 
   &.disabled
     color: $disabled-color

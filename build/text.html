@@ -100,6 +100,15 @@
         <symbol id="chevron_up" viewBox="0 0 13 8">
             <path d="M6.6251 0.759277L0.72998 6.65439L2.03486 7.95928L6.6251 3.3783L11.2061 7.95928L12.511 6.65439L6.6251 0.759277Z" />
         </symbol>
+        <symbol id="big_arrow_down" viewBox="0 0 40 121">
+            <path d="M40 103.568L39.199 102.658L20.6068 118.908V0H19.3932V118.786L0.788835 102.852L0 103.774L20 120.947L40 103.568Z" />
+        </symbol>
+        <symbol id="slider_next" viewBox="0 0 28 17">
+            <path d="M0 7.88193H25.3348L17.514 0.917927L18.3341 0L27.7581 8.49388L18.3341 17L17.514 16.0821L25.3348 9.10583H0V7.88193Z" />
+        </symbol>
+        <symbol id="slider_prev" viewBox="0 0 28 17">
+            <path d="M27.7581 9.11807L2.42328 9.11807L10.244 16.0821L9.424 17L-4.3869e-05 8.50612L9.424 0L10.244 0.917927L2.42328 7.89417L27.7581 7.89417V9.11807Z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -111,9 +120,9 @@
             <a class="header__logo" href="https://bitavto.ru/"><img src="images/logo.png" alt="БИТАВТО"></a>
             <div class="header__contacts">
                 <div class="header__phones">
-                    <a href="tel:+79217410066">СПБ +7 (921) 741-00-66</a>
-                    <span></span>
-                    <a href="tel:+79295650745">МСК +7 (929) 565-07-45</a>
+                    <span class="header__phone"><span>СПБ</span>&nbsp;<a href="tel:+79217410066">+7 (921) 741-00-66</a></span>
+                    <span class="header__phones-divider"></span>
+                    <span class="header__phone"><span>МСК</span>&nbsp;<a href="tel:+79295650745">+7 (929) 565-07-45</a></span>
                 </div>
                 <div class="header__messangers">
                     <a class="header__messanger" href="#" title="Мы в Telegram" target="_blank" rel="nofollow noopener noreferrer">
@@ -209,7 +218,62 @@
             <br><br>
 
             <label class="input-label">
-                <textarea class="textarea" placeholder="Плейсхолдер"></textarea>
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message error">
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message error">
+                    <svg class="icon">
+                        <use xlink:href="#warning"></use>
+                    </svg>
+                    Warning
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message error">
+                    <svg class="icon">
+                        <use xlink:href="#warning"></use>
+                    </svg>
+                    Error
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message">
+                    <svg class="icon">
+                        <use xlink:href="#loading"></use>
+                    </svg>
+                    Loading
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message success">
+                    <svg class="icon">
+                        <use xlink:href="#success"></use>
+                    </svg>
+                    Success
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
             </label>
 
             <br><br>
@@ -221,7 +285,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_1" type="file">
+                <input id="input_1" type="file" multiple>
                 <label class="input-file__text-block" for="input_1">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -233,7 +297,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_2" class="error" type="file">
+                <input id="input_2" class="error" type="file" multiple>
                 <label class="input-file__text-block" for="input_2">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -251,7 +315,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_3" class="error" type="file">
+                <input id="input_3" class="error" type="file" multiple>
                 <label class="input-file__text-block" for="input_3">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -269,7 +333,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_4" type="file">
+                <input id="input_4" type="file" multiple>
                 <label class="input-file__text-block" for="input_4">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -287,7 +351,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_5" type="file">
+                <input id="input_5" type="file" multiple>
                 <label class="input-file__text-block" for="input_5">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -305,7 +369,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_6" type="file" disabled>
+                <input id="input_6" type="file" multiple disabled>
                 <label class="input-file__text-block" for="input_6">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>

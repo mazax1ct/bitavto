@@ -105,7 +105,62 @@
             <br><br>
 
             <label class="input-label">
-                <textarea class="textarea" placeholder="Плейсхолдер"></textarea>
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message error">
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message error">
+                    <svg class="icon">
+                        <use xlink:href="#warning"></use>
+                    </svg>
+                    Warning
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message error">
+                    <svg class="icon">
+                        <use xlink:href="#warning"></use>
+                    </svg>
+                    Error
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message">
+                    <svg class="icon">
+                        <use xlink:href="#loading"></use>
+                    </svg>
+                    Loading
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="input-label">
+                <textarea class="textarea" placeholder="Плейсхолдер" data-limit="100"></textarea>
+                <span class="validation-message success">
+                    <svg class="icon">
+                        <use xlink:href="#success"></use>
+                    </svg>
+                    Success
+                    <span class="message-count"><span>0</span>/100</span>
+                </span>
             </label>
 
             <br><br>
@@ -117,7 +172,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_1" type="file">
+                <input id="input_1" type="file" multiple>
                 <label class="input-file__text-block" for="input_1">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -129,7 +184,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_2" class="error" type="file">
+                <input id="input_2" class="error" type="file" multiple>
                 <label class="input-file__text-block" for="input_2">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -147,7 +202,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_3" class="error" type="file">
+                <input id="input_3" class="error" type="file" multiple>
                 <label class="input-file__text-block" for="input_3">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -165,7 +220,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_4" type="file">
+                <input id="input_4" type="file" multiple>
                 <label class="input-file__text-block" for="input_4">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -183,7 +238,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_5" type="file">
+                <input id="input_5" type="file" multiple>
                 <label class="input-file__text-block" for="input_5">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>
@@ -201,7 +256,7 @@
             <br><br>
 
             <div class="input-file">
-                <input id="input_6" type="file" disabled>
+                <input id="input_6" type="file" multiple disabled>
                 <label class="input-file__text-block" for="input_6">
                     <svg class="icon">
                         <use xlink:href="#photo"></use>

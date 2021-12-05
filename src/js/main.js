@@ -17,6 +17,15 @@ $(document).ready(function() {
 		var $p = $(this).closest('.select-wrapper__container');
 		$p.removeClass('open');
 	});
+
+
+	//счётчик символов в textarea
+	$('.textarea').each(function () {
+		if($(this).val().length > 0) {
+			$(this).parent('.input-label').addClass('changed');
+		}
+		$(this).closest('.input-label').find('.message-count span').text(this.value.replace(/{.*}/g, '').length);
+	});
 });
 
 //скролл по якорю
@@ -28,14 +37,19 @@ $(document).on('click', '.js-scroll-to', function () {
 });
 
 //инпут type file
-$('.input-file').each(function() {
-	var input = $(this).find('input[type="file"]'),
-		label = $(this).find('.input-file__text');
-	input.on('change', function(element) {
-		var fileName = '';
-		if (element.target.value) {
-			fileName = element.target.value.split('\\').pop();
-			label.text(fileName);
-		}
-	});
+$('.input-file input[type="file"]').change(function() {
+  if ($(this).val() != '') {
+		$(this).closest('.input-file').find('.input-file__text').text('Выбрано файлов: ' + $(this)[0].files.length);
+	} else {
+		$(this).closest('.input-file').find('.input-file__text').text('Фото авто');
+	}
+});
+
+//счётчик символов в textarea
+$('.textarea').keyup(function() {
+	var characters_Limit = $(this).attr('data-limit');
+  if ($(this).val().length > characters_Limit) {
+		$(this).val($(this).val().substr(0, characters_Limit));
+  }
+	$(this).closest('.input-label').find('.message-count span').text(this.value.replace(/{.*}/g, '').length);
 });
