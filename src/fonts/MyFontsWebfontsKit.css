@@ -45,7 +45,7 @@
 
 @font-face {
   font-family: "ArtegraSans-Medium";
-  src: url('/fonts/webFonts/ArtegraSansMedium/font.woff2') format('woff2'), url('/fonts/webFonts/ArtegraSansMedium/font.woff') format('woff');
+  src: url('../fonts/webFonts/ArtegraSansMedium/font.woff2') format('woff2'), url('../fonts/webFonts/ArtegraSansMedium/font.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;

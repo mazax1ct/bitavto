@@ -169,13 +169,21 @@
         width: 40px
 
   &__form-block
-    @media(min-width: 768px)
-      min-width: 396px
-      max-width: 686px
-      width: 43.69426%
+    margin-left: auto
+    margin-right: auto
+    max-width: 343px
 
-    @media(min-width: 1350px) and (max-width: 1799px)
-      max-width: 510px
+    @media(min-width: 768px)
+      max-width: 100%
+      min-width: 396px
+      width: 396px
+
+    @media(min-width: 1200px)
+      min-width: 510px
+      width: 510px
+
+    @media(min-width: 1600px)
+      width: 686px
 
   &__form
     border: 1px solid $light-text-color
@@ -185,15 +193,11 @@
     padding-right: 20px
     padding-bottom: 38px
 
-    @media(min-width: 1024px)
-      padding-left: 24px
-      padding-right: 24px
-
-    @media(min-width: 1100px)
+    @media(min-width: 1200px)
       padding-left: 40px
       padding-right: 40px
 
-    @media(min-width: 1800px)
+    @media(min-width: 1600px)
       border-radius: 0 0 0 100px
       padding-top: 78px
       padding-left: 84px
@@ -211,7 +215,7 @@
         @media(min-width: 1350px)
           font-size: 16px
 
-        @media(min-width: 1800px)
+        @media(min-width: 1600px)
           font-size: 20px
 
       &::-moz-placeholder
@@ -224,7 +228,7 @@
         @media(min-width: 1350px)
           font-size: 16px
 
-        @media(min-width: 1800px)
+        @media(min-width: 1600px)
           font-size: 20px
 
       &:-ms-input-placeholder
@@ -237,7 +241,7 @@
         @media(min-width: 1350px)
           font-size: 16px
 
-        @media(min-width: 1800px)
+        @media(min-width: 1600px)
           font-size: 20px
 
   &__form-title
@@ -251,15 +255,18 @@
     text-align: center
     white-space: nowrap
 
+    @media(min-width: 768px)
+      letter-spacing: 3.5px
+
+    @media(min-width: 1200px)
+      letter-spacing: 8.5px
+
     @media(min-width: 1350px)
-      letter-spacing: 8px
       margin-bottom: 20px
 
-    @media(min-width: 1800px)
+    @media(min-width: 1600px)
       font-size: 36px
-      letter-spacing: 10.5px
-      margin-left: 0
-      margin-right: 0
+      letter-spacing: 11.4px
 
   &__form-subtitle
     display: none
@@ -270,7 +277,7 @@
     @media(min-width: 1350px)
       display: block
 
-    @media(min-width: 1800px)
+    @media(min-width: 1600px)
       font-size: 25px
       letter-spacing: 0.3px
 
@@ -278,7 +285,7 @@
     margin-bottom: 21px
 
     &--type_1
-      @media(min-width: 540px)
+      @media(min-width: 768px)
         display: flex
         margin-left: -9px
         margin-right: -9px
@@ -288,7 +295,7 @@
       width: 100%
 
   &__form-cell
-    @media(min-width: 540px)
+    @media(min-width: 768px)
       padding-left: 9px
       padding-right: 9px
       width: 50%
@@ -296,7 +303,7 @@
     &:not(:last-child)
       margin-bottom: 21px
 
-      @media(min-width: 540px)
+      @media(min-width: 768px)
         margin-bottom: 0
 
     .select-wrapper .select2-container
@@ -325,7 +332,7 @@
   &__form-dropdown
     display: none
 
-    @media(min-width: 1800px)
+    @media(min-width: 1600px)
       padding-bottom: 7px
 
   &__form-note
@@ -336,12 +343,13 @@
 
     @media(min-width: 1024px)
       font-size: 13px
+      letter-spacing: 0.3px
+
+    @media(min-width: 1200px)
+      font-size: 15px
       letter-spacing: 0.5px
 
-    @media(min-width: 1350px)
-      font-size: 15px
-
-    @media(min-width: 1800px)
+    @media(min-width: 1600px)
       font-size: 19px
 
     a

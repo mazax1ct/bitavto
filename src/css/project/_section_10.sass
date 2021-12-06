@@ -1,0 +1,143 @@
+.section_10
+  padding-top: 44px
+  padding-bottom: 134px
+  position: relative
+
+  @media(min-width: 768px)
+    padding-top: 65px
+    padding-bottom: 63px
+
+  &__container
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    @media(min-width: 1024px)
+      background-image: url('../images/content/map.svg')
+      background-position: 100% 100%
+      background-repeat: no-repeat
+      background-size: auto 100%
+
+    @media(min-width: 1350px)
+      background-size: auto 450px
+
+  h2
+    font-size: 15px
+    font-weight: 400
+    line-height: 1.23333
+    margin-bottom: 22px
+
+    @media(min-width: 1800px)
+      font-size: 23px
+      line-height: 1.23913
+      margin-bottom: 41px
+
+  &__intro-block
+    @media(min-width: 1350px)
+      margin-top: 40px
+      
+    .button
+      bottom: 46px
+      left: 0
+      position: absolute
+      top: auto
+
+      @media(min-width: 768px)
+        position: static
+
+  &__intro
+    color: $dark-text-color
+    font-family: 'ArtegraSans-Medium', Arial, sans-serif
+    font-size: 31px
+    font-weight: 500
+    line-height: 1.12903
+    margin-bottom: 37px
+
+    @media(min-width: 1800px)
+      font-size: 44px
+      line-height: 1.59090
+      margin-bottom: 45px
+
+  &__contacts-block
+
+  &__contacts
+    background-color: #fff
+    border: 1px solid $light-text-color
+    border-radius: 0 0 0 32px
+    max-width: 343px
+    padding: 25px 30px 30px
+
+    @media(min-width: 768px)
+      min-width: 343px
+      width: 343px
+
+    @media(min-width: 1350px)
+      padding-top: 32px
+      padding-bottom: 40px
+      min-width: 392px
+      width: 392px
+
+  &__contact
+    margin-left: auto
+    margin-right: auto
+    max-width: 200px
+
+    @media(min-width: 1350px)
+      font-size: 23px
+      max-width: 260px
+
+    &:not(:last-child)
+      border-bottom: 1px solid $light-text-color
+      margin-bottom: 23px
+      padding-bottom: 25px
+
+      @media(min-width: 1350px)
+        padding-bottom: 37px
+        margin-bottom: 28px
+
+    h3
+      color: $dark-text-color
+      font-size: 24px
+      font-weight: 400
+      line-height: 1.2
+      margin-bottom: 20px
+      text-align: center
+
+      @media(min-width: 1350px)
+        font-size: 31px
+        margin-bottom: 28px
+
+    p
+      padding-left: 30px
+      position: relative
+
+      @media(min-width: 1350px)
+        padding-left: 40px
+
+      &:not(:last-child)
+        margin-bottom: 18px
+
+      .icon
+        fill: $light-text-color
+        height: 15px
+        left: 0
+        position: absolute
+        top: 3px
+        width: 15px
+
+        @media(min-width: 1350px)
+          height: 18px
+          width: 18px
+
+    a
+      color: $light-text-color
+
+      &:focus
+        color: $light-text-color
+        outline: 1px solid $light-text-color
+
+      &:hover,
+      &:active
+        color: $dark-text-color
+        outline: none
