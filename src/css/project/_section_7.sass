@@ -60,13 +60,17 @@
       font-size: 31px
 
     &.is-active
+      color: $dark-text-color
+
       &::after
         transform: translateY(-50%) rotate(-180deg)
 
     &:hover,
-    &:active,
-    &:focus
+    &:active
       color: $light-text-color
+      outline: none
+
+    &:focus
       outline: none
 
     &::after

@@ -101,12 +101,21 @@
     margin-bottom: 32px
     overflow: hidden
 
+    @media(min-width: 1350px)
+      border-radius: 0 0 0 60px
+
     @media(min-width: 1800px)
       margin-bottom: 56px
 
     img
+      border-radius: 0 0 0 50px
+      display: block
       transition: transform 0.3s
       transform: scale(1)
+      width: 100%
+
+      @media(min-width: 1350px)
+        border-radius: 0 0 0 60px
 
   &__title
     display: block
